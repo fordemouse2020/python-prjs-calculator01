@@ -1,2 +1,2 @@
 # python-prjs-calculator01
-for Education Use Only
+for Education Use only
