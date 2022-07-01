@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+
+<body>
+{% block content %}
+
+<form method="post">
+{% csrf_token %}
+
+<table>
+<tr>
+<td>First number
+<td><input type="text" name="tbxn1" value="{{ qsn1 }}" />
+
+<tr>
+<td>Operatpr
+<td>
+    <select name="cbxop">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="x">x</option>
+        <option value="/">/</option>
+    </select>
+
+<tr>
+<td>Second number
+<td><input type="text" name="tbxn2" value="{{ qsn2 }}" />
+
+<tr>
+<td>Output
+<td>{{ qsresult }}
+
+<tr>
+<td><input type="submit" value="Find" />
+<td><input type="reset" value="Cancel" onclick="document.location=document.URL;" />
+
+<tr>
+<td><a href="../">Home</a>
+
+</table>
+</form>
+
+{% endblock %}
+
+</body>
+</html>

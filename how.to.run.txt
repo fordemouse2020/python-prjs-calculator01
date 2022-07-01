@@ -1,0 +1,3 @@
+C:\Users\<user-name>\Downloads\webhost\django.calc\prjcalc>python.exe manage.py runserver
+
+C:\Users\<user-name>\Downloads\webhost\django.calc\prjcalc>exit
